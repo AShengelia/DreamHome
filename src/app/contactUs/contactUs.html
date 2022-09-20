@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row SendUsForm">
+
+        <form action="" (submit)="sendData()" [formGroup]="UserForm" class="p-5 contactForm">
+
+            <h4>Get A Quick Quote</h4>
+
+            <input type="text" name="firstName" class="one form-control my-2" formControlName="name"
+                placeholder="Full Name">
+            <input type="email" name="email" class="two form-control my-2" formControlName="email"
+                placeholder="Email Address">
+            <input type="tel" name="email" class="three form-control my-2" formControlName="tel"
+                placeholder="Phone Number(+995 111 222)">
+            <input type="text" name="text" class="four form-control my-2" formControlName="text"
+                placeholder="What are you Looking for? (Ex: villa on the Beach)">
+            <input type="submit" value="SEND EMAIL" class="sendBtn btn my-2" [disabled]="UserForm.invalid">
+
+        </form>
+    </div>
+</div>

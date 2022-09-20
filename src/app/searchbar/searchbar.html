@@ -1,0 +1,73 @@
+<div id="search-form">
+    <div class="container">
+        <a class="head-search" (click)="scrolldown()">search properties</a>
+
+        <div class="first-section-type ">
+            <div class="bytypeWrapper">
+                <h6>type</h6>
+                <div class="buyType" (click)="changeType()" [ngClass]="{rentOn: IsRentOn}">
+                    <h5>Buy</h5>
+                    <h5>Rent</h5>
+                </div>
+            </div>
+
+
+            <div class="select-wrapper">
+                <div class="first-select ms-auto">
+                    <h6>choose location</h6>
+                    <select2 class="select-place" [overlay]="overlay" [data]="data1" [value]="valueData1" id="selec2-1">
+                    </select2>
+                </div>
+
+                <div class="second-select">
+                    <h6>property type</h6>
+                    <select2 class=" select-place" [overlay]="overlay" [data]="data2" [value]="valueData2"
+                        id="selec2-1">
+
+                    </select2>
+                </div>
+
+                <div class="third-select">
+                    <h6>beds</h6>
+                    <select2 class=" select-place-small " [data]="data3" [value]="valueData3" id="selec2-1">
+                        <option value="">Any</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select2>
+
+                </div>
+
+                <div class="fours-select">
+                    <h6>baths</h6>
+                    <select2 class=" select-place-small " [data]="data3" [value]="valueData3" id="selec2-1">
+                        <option value="">Any</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select2>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row rangeWrapper">
+                <div class="custom-slider col-md-4">
+                    <h6>price range</h6>
+                    <ngx-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider>
+                </div>
+                <div class="custom-slider col-md-4">
+                    <h6>PROPERTY AREA</h6>
+                    <ngx-slider [(value)]="value2" [(highValue)]="highValue2" [options]="options2"></ngx-slider>
+                </div>
+                <button class="range-search col-md-4">search</button>
+            </div>
+        </div>
+    </div>
+</div>

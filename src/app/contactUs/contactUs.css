@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.contactForm h4 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.contactForm .sendBtn {
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.contactForm .sendBtn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+}
+.form-control {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+    border: 1px solid rgb(154, 152, 152);
+}
+
+.form-control:nth-child(5) {
+    height: 150px !important;
+    width: 350px;
+}
+@media (max-width: 1055px) {
+    .SendUsForm {
+        width: 400px;
+    }
+    .form-control:nth-child(5) {
+        width: 100%;
+    }
+}
+@media (max-width: 1001px) {
+    .SendUsForm {
+        width: 370px;
+    }
+    .form-control:nth-child(5) {
+        width: 100%;
+    }
+}

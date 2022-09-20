@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1 "Open Sans", sans-serif;
+    color: #555;
+    background: #eee;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 2;
+}
+
+main {
+    min-width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+#content3 p {
+    width: 70%;
+}
+#content3 .map {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+input {
+    display: none;
+}
+
+label {
+    margin-left: 2.5% !important;
+    width: 30%;
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(78, 77, 77);
+    border: 1px solid transparent;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input:checked + label {
+    color: #555;
+    border-bottom: 2px solid #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 3px solid gray;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+    display: block;
+}
+
+@media screen and (max-width: 650px) {
+    label {
+        font-size: 0;
+    }
+
+    label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 400px) {
+    label {
+        padding: 15px;
+    }
+}
+
+/* count up */
+
+.client-count .container {
+    display: flex;
+    justify-content: space-around;
+}
+.client-count .container .cards {
+    text-align: center;
+}
+.client-count .container .cards h2 {
+    color: rgba(85, 85, 85, 0.284);
+    font-weight: bold;
+    font-size: 45px;
+}
+.client-count .container .cards p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/* count up end */
+
+/* checked start */
+
+.propertiesChecked .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 5px;
+}
+.propertiesChecked .container .CardsChecked span {
+    display: flex;
+    align-items: center;
+    color: rgb(86, 86, 86);
+}
+.propertiesChecked .container .CardsChecked span i {
+    font-size: 25px;
+    color: #2c3e50;
+}
+.propertiesChecked .container .CardsChecked span h6 {
+    font-weight: 400;
+}
+/* checked end */
+
+/* LegalContacts */
+.LegalContacts {
+    width: 70%;
+}
+.LegalContacts .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.LegalContacts .container .one {
+    width: 40%;
+}
+.LegalContacts .container .two {
+    width: 60%;
+}
+.PhoneNumbersAdressCard h6 {
+    margin-bottom: 12px;
+}
+.PhoneNumbersAdressCard p {
+    font-size: 14px;
+    line-height: 2px;
+    letter-spacing: 1;
+}
+.PhoneNumbersAdressCard b {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+/* LegalContacts end */

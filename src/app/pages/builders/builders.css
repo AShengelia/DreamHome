@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.section-1 .bacgroundWrapper {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../../../assets/img/builderBG/page-title.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    filter: brightness(70%);
+    position: relative;
+}
+.section-1 .header h1 {
+    color: #fff !important;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 35%;
+    left: 42%;
+}
+
+/* section2  */
+.section-2 {
+    height: 110vh;
+    background-color: #f6f6f6;
+}
+.section-2 {
+    padding-top: 80px !important;
+    padding-bottom: 30px;
+}
+.section-2 p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #8d97ad;
+}
+.BuildersCardWrapper {
+    margin: auto;
+    width: 100% !important;
+}
+.grid-item {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+.grid-item img {
+    width: 100%;
+}
+.grid-item1 {
+    grid-area: one;
+}
+.grid-item2 {
+    grid-area: two;
+}
+.grid-item3 {
+    grid-area: three;
+}
+.grid-item4 {
+    grid-area: four;
+}
+.grid-item5 {
+    grid-area: five;
+}
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item7,
+.grid-item8,
+.grid-item9,
+.grid-item10,
+.grid-item11 {
+    border-right: 1px dotted rgba(86, 86, 86, 0.237);
+    border-bottom: 1px dotted rgba(86, 86, 86, 0.237);
+}
+.grid-item6 {
+    grid-area: six;
+    border-bottom: 1px dotted rgba(86, 86, 86, 0.237);
+}
+.grid-item7 {
+    grid-area: seven;
+}
+.grid-item8 {
+    grid-area: eight;
+}
+.grid-item9 {
+    grid-area: nine;
+}
+.grid-item10 {
+    grid-area: ten;
+}
+.grid-item11 {
+    grid-area: eleven;
+}
+.grid-item12 {
+    grid-area: twelve;
+    border-bottom: 1px dotted rgba(86, 86, 86, 0.237);
+}
+.grid-item7,
+.grid-item8,
+.grid-item9,
+.grid-item10,
+.grid-item11,
+.grid-item13,
+.grid-item14,
+.grid-item15,
+.grid-item16,
+.grid-item17 {
+    border-right: 1px dotted rgba(86, 86, 86, 0.237);
+}
+.BuildersInfo h6 {
+    margin-top: 19px;
+    color: rgb(86, 86, 86);
+}
+.BuildersInfo .BuildersCardWrapper {
+    display: grid;
+    grid-template-areas:
+        "one two three four five six "
+        "seven eight nine ten eleven twelve";
+}
+.BuildersInfo .BuildersCardWrapper li {
+    list-style-type: none;
+}
+@media (max-width: 820px) {
+    .section-1 .bacgroundWrapper {
+        height: 50vh;
+    }
+    .section-1 .header h1 {
+        top: 25%;
+    }
+    .section-2 {
+        height: 120vh;
+    }
+    .BuildersInfo .BuildersCardWrapper {
+        grid-template-areas:
+            "one two three"
+            "four five six "
+            "seven eight nine"
+            "ten eleven twelve";
+    }
+    .grid-item3,
+    .grid-item9,
+    .grid-item15 {
+        border-right: none;
+    }
+    .grid-item16,
+    .grid-item17,
+    .grid-item18 {
+        border-top: 1px dotted rgba(86, 86, 86, 0.237);
+    }
+}
+/* section2 end */
